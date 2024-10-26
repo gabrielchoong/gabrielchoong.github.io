@@ -1,86 +1,130 @@
+/**
+ * global styles for all web pages, import this before any other styles
+ */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hack Nerd Font', sans-serif;
+}
+
+h1, em, strong, em strong {
+  font-family: 'Hack Nerd Font', sans-serif;
+}
+
+h1 {
+  font-weight: bold; /* Uses bold variant */
+}
+
+em {
+  font-style: italic; /* Uses italic variant */
+}
+
+strong {
+  font-weight: bold; /* Uses bold variant */
+}
+
+em strong {
+  font-weight: bold; /* Uses bold-italic variant */
+  font-style: italic; /* Uses italic variant */
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+
+
+
+/**
+ * colours, only modify them in the global styles if possible
+ */
+
+main {
+  background-color: #777777;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+main a {
+  color: #ffab40;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: #ffffff;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  height: 150px;
+}
+
+footer {
+  height: 80px;
+  font-weight: bold;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: #ffab40;
+  text-decoration: none; /* No I don't want the underline */
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+
+
+/**
+ * Nerd Fonts live in the fonts/ directory
+ */
+
 /* Hack Nerd Font Regular */
 @font-face {
-    font-family: 'Hack Nerd Font';
-    src: url('../fonts/HackNerdFont-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Hack Nerd Font';
+  src: url('../fonts/HackNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Hack Nerd Font Bold */
 @font-face {
-    font-family: 'Hack Nerd Font';
-    src: url('../fonts/HackNerdFont-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Hack Nerd Font';
+  src: url('../fonts/HackNerdFont-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* Hack Nerd Font Italic */
 @font-face {
-    font-family: 'Hack Nerd Font';
-    src: url('../fonts/HackNerdFont-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+  font-family: 'Hack Nerd Font';
+  src: url('../fonts/HackNerdFont-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* Hack Nerd Font Bold Italic */
 @font-face {
-    font-family: 'Hack Nerd Font';
-    src: url('../fonts/HackNerdFont-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+  font-family: 'Hack Nerd Font';
+  src: url('../fonts/HackNerdFont-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
 
-body {
-    font-family: 'Hack Nerd Font', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-family: 'Hack Nerd Font', sans-serif;
-    font-weight: bold; /* Uses bold variant */
-}
-
-em {
-    font-family: 'Hack Nerd Font', sans-serif;
-    font-style: italic; /* Uses italic variant */
-}
-
-strong {
-    font-family: 'Hack Nerd Font', sans-serif;
-    font-weight: bold; /* Uses bold variant */
-}
-
-em strong {
-    font-family: 'Hack Nerd Font', sans-serif;
-    font-weight: bold; /* Uses bold-italic variant */
-    font-style: italic; /* Uses italic variant */
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
