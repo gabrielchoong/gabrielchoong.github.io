@@ -5,7 +5,7 @@
   min-height: 100vh;
 }
 
-header .container {
+header .custom-container {
   display: flex;
 
   /* Keep this for a two pane view*/
@@ -13,7 +13,7 @@ header .container {
   border: 0;
 }
 
-.container {
+.custom-container {
   display: flex;
 
   /* Keep this for a two pane view*/
@@ -23,17 +23,17 @@ header .container {
   border: 1px solid #ccc;
 }
 
-.left-content, .right-content {
+.page-left, .page-right {
   padding: 10px;
 }
 
-.left-content {
+.page-left {
   flex: 3;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.right-content {
+.page-right {
   flex: 1;
   text-align: left;
   line-height: 1.6;
@@ -71,22 +71,22 @@ a:hover img {
   transform: scale(1.1);
 }
 
-.right-content p img {
+.page-right p img {
   width: 30px;
   height: auto;
   vertical-align: middle;
   padding: 10px;
 }
 
-.right-content p a, .right-content p a:hover {
+.page-right p a, .page-right p a:hover {
   text-decoration: none;
 }
 
-.right-content p a{
+.page-right p a{
   color: white;
 }
 
-.right-content p a:hover {
+.page-right p a:hover {
   color: #FFD700;
 }
 
